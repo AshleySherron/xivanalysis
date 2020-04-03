@@ -35,7 +35,7 @@ export default class Swiftcast extends Module {
 	_onCast(event) {
 		const action = getDataBy(ACTIONS, 'id', event.ability.guid)
 		if (!action) {
-			return;
+			return
 		}
 
 		// If swiftcast was used but has expired, record the last swiftcast use
